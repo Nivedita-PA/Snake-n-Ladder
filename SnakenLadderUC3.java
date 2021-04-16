@@ -1,3 +1,4 @@
+
 public class SnakenLadderUC3 {
 
 	public static void main(String[] args) {
@@ -29,14 +30,15 @@ public class SnakenLadderUC3 {
 	    else if(start_Position == snake_1 || start_Position == snake_2 || start_Position == snake_3 ||
 	    		start_Position == snake_4 || start_Position == snake_5 || start_Position == snake_6 
 	    		|| start_Position == snake_7) {
-			snake = (int) dice_Roll - start_Position;
+			snake = start_Position - (int) dice_Roll;
 			System.out.println("Snake: " +start_Position);
 		}
 		else {
-			start_Position = start_Position + 1;
 			System.out.println("Chance: " +start_Position);
 		}
 			
 	}
 
 }
+}
+
